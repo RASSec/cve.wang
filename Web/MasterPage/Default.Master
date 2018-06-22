@@ -1,0 +1,178 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="Maticsoft.Web.MasterPage.Default" %>
+
+<%@ Register Src="~/Controls/Login/UserInfo.ascx" TagPrefix="Login" TagName="userInfo" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <title>
+        <asp:ContentPlaceHolder ID="title" runat="server">漏洞平台</asp:ContentPlaceHolder>
+    </title>
+    <link href="../css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+  <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+  <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <style>
+        .main-nav {
+            background-color: #1685d0;
+            border-color: #1685d0;
+        }
+
+            .main-nav .container {
+                margin-top: 5px;
+                margin-bottom: 5px;
+                float: right;
+            }
+
+            .main-nav .navbar-nav > li > a {
+                background-color: #1685d0;
+                border-color: #fff;
+                color: #fff;
+                font-size: 16px;
+                font-family: 'Microsoft YaHei';
+            }
+
+            .main-nav .navbar-nav > li:hover {
+                background: #000;
+            }
+
+        .caption, caption {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            color: #777;
+            text-align: left;
+        }
+
+        caption {
+            font-size: 16px;
+        }
+
+        .nav > li:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="Script" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <%-- <Login:userInfo ID="userInfo" runat="server"></Login:userInfo>--%>
+    <div style="height: 60px;">
+        <nav class="main-nav navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <li><a href="/index.aspx">首页 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="/company.aspx">厂商列表</a></li>
+                    <li><a href="javascript:void(0);" id="faju">发掘</a></li>
+                    <li><a href="/loudonglist.aspx">漏洞列表</a></li>
+                    <li><a href="/Account/vlist.aspx">精华榜</a></li>
+                    <li><a href="/loophole/add.aspx">提交漏洞</a></li>
+                    <li><a href="/announcement.aspx">公告</a></li>
+
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right hidden-sm" style="margin-right: 50px;">
+                    <%if (HttpContext.Current.User.Identity.IsAuthenticated)
+                      {
+                          var user = (HttpContext.Current.User as Maticsoft.Common.JQFormsPrincipal<Maticsoft.Model.member>).UserData;
+                          int? xinnumber = new Maticsoft.BLL.member_rank().GetModel(user.rank).xinnumber;
+                          %>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%=user.netname %>&nbsp;&nbsp;<%=Maticsoft.Common.StringPlus.GetXinNumber((int)xinnumber) %><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li style="text-align: center;"><span style="color: #808080; font-weight: 700;">积分:<%=user.ranknumber %>&nbsp;&nbsp;<font color="red"><%=Maticsoft.BLL.member_rank.GetRankType(user.rank) %></font></span></li>
+                            <li><a href="/Account/modifypwd.aspx">修改密码</a></li>
+                            <li><a href="/Account/myloudonglist.aspx">我的漏洞列表</a></li>
+                            <li><a href="/Account/myattention.aspx">我关注的漏洞</a></li>
+                            <li><a href="/Api/AjaxSubmit.ashx?action=SignOut">退出</a></li>
+                        </ul>
+                    </li>
+                    <%}
+                      else
+                      { %>
+                    <li><a href="/login.aspx">登录</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#exampleModal">注册</a></li>
+                    <%} %>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    <div class="footer">
+        copyright(c)2015 漏洞平台  All right reserved<br>
+        版权所有◎漏洞平台
+    </div>
+</body>
+
+<div class="modal fade " id="exampleModal" aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">用户注册</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="message-text" class="control-label">邮箱：</label>
+                        <input type="text" class="form-control" name="email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="control-label">昵称：</label>
+                        <input type="text" name="netname" class="form-control" id="Text2">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="control-label">用户名:</label>
+                        <input type="text" class="form-control" name="username" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="control-label">密码：</label>
+                        <input type="password" class="form-control" name="pwd" id="Text1">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="Regist">提交</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/register.js"></script>
+<script type="text/javascript">
+    $("#faju").click(function () {
+            <%if (!this.Page.User.Identity.IsAuthenticated)
+              {%>
+        alert("您还不是本站的会员，请您注册登录;");
+            <%}
+              else
+              {%>
+        window.location.href = '/memberlist.aspx';
+                <%}%>
+    });
+
+    $('#exampleModal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget) // Button that triggered the modal
+        var recipient = button.data('whatever') // Extract info from data-* attributes
+        // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+        // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+        var modal = $(this)
+    });
+
+    $('#exampleModal').on('hidden.bs.modal', function (e) {
+        window.location.reload();
+    });
+
+</script>
+</html>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Tree>
+  <!--<TreeNode Text="关键字管理">
+		<TreeNode Text="新闻关键字" NavigateUrl="keywords/list.aspx?lanmu=6" IconUrl="/res/icon/world_key.png"></TreeNode>
+	</TreeNode>-->
+  <!--<TreeNode Text="评论管理">
+		<TreeNode Text="评论列表" NavigateUrl="comment/list.aspx?lanmu=1" IconUrl="/res/icon/comments.png"></TreeNode>
+	</TreeNode>-->
+  <TreeNode Text="厂商管理">
+    <TreeNode Text="厂商列表" NavigateUrl="company/list.aspx" IconUrl="/res/icon/user_star.png"></TreeNode>
+    <!--<TreeNode Text="直营品牌列表" NavigateUrl="brand/BrandJoin/comInfoManage.aspx" IconUrl="/res/icon/user.png"></TreeNode>
+			<TreeNode Text="修改申请人列表" NavigateUrl="brand/BrandJoin/comInfoApply.aspx?type=0" IconUrl="/res/icon/user.png"></TreeNode>
+			<TreeNode Text="皇冠|联盟商户申请" NavigateUrl="brand/ApplyUnionBrand.aspx" IconUrl="/res/icon/user_star.png"></TreeNode>
+			<TreeNode Text="增加品牌位置" NavigateUrl="brand/editBrandLocation.aspx" IconUrl="/res/icon/user.png"></TreeNode>
+			<TreeNode Text="品牌位置列表" NavigateUrl="brand/brandLocationList.aspx" IconUrl="/res/icon/user.png"></TreeNode>
+			<TreeNode Text="缺失品牌列表" NavigateUrl="brand/misslist.aspx" IconUrl="/res/icon/book_red.png"></TreeNode>
+			<TreeNode Text="品牌纠错列表" NavigateUrl="brand/errorlist.aspx" IconUrl="/res/icon/book_red.png"></TreeNode>
+			
+			<TreeNode Text="补充的联系人(不可)" NavigateUrl="brand/addContactList.aspx" IconUrl="/res/icon/group.png"></TreeNode>
+			<TreeNode Text="追加的联系人(可)" NavigateUrl="brand/zhuiContactList.aspx" IconUrl="/res/icon/group.png"></TreeNode>
+			<TreeNode Text="发布统计报表" NavigateUrl="brand/publishReport.aspx" IconUrl="/res/icon/report.png"></TreeNode>
+			<TreeNode Text="任务区">
+				<TreeNode Text="我的品牌缺失任务" NavigateUrl="brand/Task/mymisslist.aspx" IconUrl="/res/icon/user.png"></TreeNode>
+				<TreeNode Text="我的品牌纠错任务" NavigateUrl="brand/Task/myerrorlist.aspx" IconUrl="/res/icon/user.png"></TreeNode>
+			</TreeNode>-->
+  </TreeNode>
+  <TreeNode Text="漏洞管理">
+    <TreeNode Text="添加漏洞分类">
+      <TreeNode Text="漏洞大类" NavigateUrl="loophole/type/btypelist.aspx" IconUrl="/res/icon/user.png"></TreeNode>
+      <TreeNode Text="漏洞小类" NavigateUrl="loophole/type/stypelist.aspx" IconUrl="/res/icon/user.png"></TreeNode>
+    </TreeNode>
+    <TreeNode Text="漏洞列表" NavigateUrl="loophole/loophole_typelist.aspx" IconUrl="/res/icon/ruby.png"></TreeNode>
+    <!--<TreeNode Text="修改申请人列表" NavigateUrl="brand/BrandJoin/comInfoApply.aspx?type=1" IconUrl="/res/icon/user.png"></TreeNode>
+    <TreeNode Text="联系活动列表" NavigateUrl="brand/BrandJoin/listContactActivity.aspx" IconUrl="/res/icon/book.png"></TreeNode>
+    <TreeNode Text="投资咨询列表" NavigateUrl="brand/BrandJoin/listInvestmentConsultation.aspx" IconUrl="/res/icon/comment.png"></TreeNode>
+    <TreeNode Text="投资意向列表" NavigateUrl="brand/BrandJoin/listInvestmentIntention.aspx" IconUrl="/res/icon/comment.png"></TreeNode>
+    <TreeNode Text="关键字列表" NavigateUrl="brand/BrandJoin/brandJoinKeyWords.aspx"  IconUrl="/res/icon/user.png"></TreeNode>
+    <TreeNode Text="加盟会员申请列表" NavigateUrl="brand/BrandJoin/memberApply.aspx" IconUrl="/res/icon/group.png"></TreeNode>
+    <TreeNode Text="补充联系人列表" NavigateUrl="brand/BrandJoin/listAddContact.aspx" IconUrl="/res/icon/group.png"></TreeNode>
+    <TreeNode Text="加盟缺失列表" NavigateUrl="brand/brandjoin/listMissing.aspx" IconUrl="/res/icon/book_red.png"></TreeNode>
+    <TreeNode Text="加盟纠错列表" NavigateUrl="brand/brandjoin/listError.aspx" IconUrl="/res/icon/book_red.png"></TreeNode>
+    <TreeNode Text="加盟广告列表" NavigateUrl="brand/brandjoin/listBrandJoinPic.aspx" IconUrl="/res/icon/user.png"></TreeNode>
+    <TreeNode Text="转移发布者" NavigateUrl="brand/brandjoin/addUserMove.aspx" IconUrl="/res/icon/user_go.png"></TreeNode>
+    <TreeNode Text="报名列表" NavigateUrl="brand/brandjoin/registrationList.aspx" IconUrl="/res/icon/user.png"></TreeNode>
+-->
+  </TreeNode>
+  <TreeNode Text="会员信息">
+    <TreeNode Text="会员注册" NavigateUrl="member/edit.aspx" IconUrl="/res/icon/user.png"></TreeNode>
+    <TreeNode Text="会员列表" NavigateUrl="member/list.aspx" IconUrl="/res/icon/user.png"></TreeNode>
+    <TreeNode Text="会员等级列表" NavigateUrl="member/ranklist.aspx" IconUrl="/res/icon/user.png"></TreeNode>
+    <!--<TreeNode Text="异常登录列表" NavigateUrl="member/exceptionList.aspx" IconUrl="/res/icon/user.png"></TreeNode>-->
+    <!--<TreeNode Text="Vip列表" NavigateUrl="member/vipList.aspx" IconUrl="/res/icon/user.png"></TreeNode>-->
+    <!--<TreeNode Text="账号关闭" NavigateUrl="member/closeMember.aspx" IconUrl="/res/icon/user.png"></TreeNode>-->
+  </TreeNode>
+  <!--<TreeNode Text="公告管理">
+		<TreeNode Text="论坛公告栏" NavigateUrl="message/list.aspx" IconUrl="/res/icon/user.png"></TreeNode>
+		<TreeNode Text="公告列表" NavigateUrl="message/BulkSMS.aspx" IconUrl="/res/icon/user.png"></TreeNode>
+	</TreeNode>-->
+  <TreeNode Text="后台管理人员">
+    <TreeNode Text="管理人员列表" NavigateUrl="~/manage/list.aspx" IconUrl="/res/icon/user_brown.png"></TreeNode>
+    <TreeNode Text="友情链接" NavigateUrl="~/link/listBrandJoinPic.aspx" IconUrl="/res/icon/user_brown.png"></TreeNode>
+  </TreeNode>
+  <TreeNode Text="公告管理">
+    <TreeNode Text="公告管理列表" NavigateUrl="~/announ/list.aspx" IconUrl="/res/icon/user_brown.png"></TreeNode>
+  </TreeNode>
+</Tree>

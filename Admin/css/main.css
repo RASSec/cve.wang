@@ -1,0 +1,143 @@
+﻿body, body.x-body
+{
+    height: auto;
+    /*background-image: url(../images/square.gif);*/
+    padding: 10px;
+}
+
+    body.x-body.theme-access
+    {
+        background-image: none;
+    }
+
+.inline
+{
+    margin-right: 5px;
+    float: left;
+}
+
+.clear
+{
+    clear: both;
+}
+
+a
+{
+    color: #333;
+    text-decoration: underline;
+}
+
+    a:hover
+    {
+        color: #eb5515;
+        text-decoration: underline;
+    }
+
+/*
+table.result
+{
+    margin: 0px;
+    padding: 0px;
+    width: 500px;
+}
+
+table.result th
+{
+    border-bottom: solid 1px #ccc;
+    font-weight: bold;
+    padding: 3px;
+}
+
+table.result td
+{
+    padding: 3px;
+}
+*/
+ol.result
+{
+    list-style-type: decimal;
+    margin: 10px 0 10px 25px;
+}
+
+table.result
+{
+    margin: 10px 0;
+    width: 500px;
+}
+
+    table.result th
+    {
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+    table.result td, table.result th
+    {
+        border-bottom: solid 1px #efefef;
+        padding: 5px;
+        text-align: left;
+    }
+
+.photo
+{
+    height: 100px;
+    line-height: 80px;
+    overflow: hidden;
+}
+
+    .photo img
+    {
+        height: 80px;
+        width: 100px;
+        vertical-align: middle;
+    }
+
+#panelCenter
+{
+    margin: auto;
+}
+
+.marginr
+{
+    margin-right: 5px;
+}
+
+.formitem
+{
+    margin-bottom: 5px;
+}
+
+.x-grid-row .x-grid-cell-inner
+{
+    white-space: normal;
+}
+
+.expander p
+{
+    margin-left: 4em;
+    color: #535353;
+}
+
+    .expander p strong
+    {
+        color: #828282;
+    }
+
+.expander div
+{
+    width: 480px;
+    float: left;
+    display: inline-block;
+}
+
+.editor > div
+{
+    display: inline-block;
+}
+
+.editor > span
+{
+    vertical-align: top;
+    display: inline-block;
+    width: 110px;
+}

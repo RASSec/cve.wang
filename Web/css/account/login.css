@@ -1,0 +1,30 @@
+.formTable {
+    
+    width: 950px;
+    line-height: 24px;
+    border: none;
+    margin: 10px auto 0;
+}
+tbody {
+    display: table-row-group;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+tbody tr td {
+    padding: 3px 6px;
+    white-space: nowrap;
+   
+}
+.formTable tbody tr th {
+    font-weight: normal;
+    text-align: right;
+    font: 14px Verdana,"Microsoft YaHei",Helvetica,Arial,Sans-Serif;
+    vertical-align: middle;
+}
+.error {
+   color:red;
+}

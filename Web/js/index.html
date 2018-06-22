@@ -1,0 +1,31 @@
+<!doctype html>
+
+<title>CodeMirror</title>
+<meta charset="utf-8"/>
+
+<!--<link rel=stylesheet href="lib/codemirror.css">
+<link rel=stylesheet href="doc/docs.css">
+<script src="lib/codemirror.js"></script>
+<script src="mode/xml/xml.js"></script>-->
+
+<link href="test/lib/codemirror.css" rel="stylesheet" />
+<link href="test/doc/docs.css" rel="stylesheet" />
+<script src="test/lib/codemirror.js"></script>
+<script src="test/xml/xml.js"></script>
+
+<section id=demo>
+  <h2>This is CodeMirror</h2>
+  <form style="position: relative; margin-top: .5em;"><textarea id=demotext>
+<!-- Create a simple CodeMirror instance -->
+<link rel="stylesheet" href="lib/codemirror.css">
+<script src="lib/codemirror.js"></script>
+</textarea>
+  </form>
+  <script>
+    var editor = CodeMirror.fromTextArea(document.getElementById("demotext"), {
+      lineNumbers: true,
+      mode: "text/html",
+      matchBrackets: true
+    });
+  </script>
+

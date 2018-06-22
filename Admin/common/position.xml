@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<position>
+	<type name="通用" value="common">
+		<posi name="普通新闻" value="0" pic="/images/locationImgs/putong.jpg" ></posi>
+		<posi name="首页曝光台" value="69" pic="/images/locationImgs/indexBaoGuan.jpg" ></posi>
+		<posi name="要闻重点1" value="33" pic="/images/locationImgs/putongFlag.jpg" ></posi>
+		<posi name="资讯中心要闻重点2" value="38" pic="" ></posi>
+		<posi name="首页图片推荐" value="31" pic="" ></posi>
+		<posi name="首页头条" value="32" pic="/images/locationImgs/TopNews.jpg" ></posi>
+		<posi name="首页原创" value="67" pic="/images/locationImgs/indexYuan.jpg" ></posi>
+		<posi name="资讯中心原创" value="39" pic="" ></posi>
+		<posi name="现场直播" value="1" pic="" ></posi>
+    <posi name="APP原创" value="82" pic="" ></posi>
+    <posi name="APP头条" value="81" pic="" ></posi>
+    <posi name="APP要闻" value="85" pic="" ></posi>
+  </type>
+	<type name="只在添加位置中用到" value="posiOnly">
+		<posi name="签约消息" value="11" pic="/images/locationImgs/sign.jpg" ></posi>
+		<posi name="签约消息重点" value="61" pic="/images/locationImgs/signFlag.jpg" ></posi>
+		<posi name="首页论坛" value="36" pic="/images/locationImgs/indexBbs.jpg" ></posi>
+		<posi name="首页文字推荐" value="62" pic="" ></posi>
+		<posi name="论坛图片新闻" value="9" pic="" ></posi>
+		<posi name="论坛热门标签" value="8" pic="" ></posi>
+		<posi name="项目操盘重点1" value="56" pic="" ></posi>
+		<posi name="项目操盘重点2" value="57" pic="" ></posi>
+		<posi name="热门关键词（首页）" value="10" pic="" ></posi>
+		<posi name="热门关键词（资讯中心）" value="60" pic="" ></posi>
+		<posi name="项目短信" value="12" pic="" ></posi>
+		<posi name="品牌短信" value="13" pic="" ></posi>
+		<posi name="企业会员" value="14" pic="" ></posi>
+		<posi name="日历新闻" value="5" pic="" ></posi>
+	</type>
+
+	<sub name="专题" value="subject">
+		<posi name="专题排行榜" value="16" pic="" ></posi>
+		<posi name="项目盘点" value="17" pic="" ></posi>
+		<posi name="品牌聚焦" value="18" pic="" ></posi>
+		<posi name="商地报告" value="19" pic="" ></posi>
+		<posi name="业态研究" value="20" pic="" ></posi>
+		<posi name="特别策划" value="21" pic="" ></posi>
+		<posi name="一周要闻" value="22" pic="" ></posi>
+		<posi name="资讯中心专题重点" value="53" pic="" ></posi>
+		<posi name="新店盘点" value="30" pic="" ></posi>
+		<posi name="新店盘点重点" value="52" pic="" ></posi>
+    <posi name="APP专题" value="84" pic="" ></posi>
+	</sub>
+	<type name="商铺资讯" value="223" show="shop">
+		<posi name="商铺重点1" value="15" pic="" ></posi>
+		<posi name="商铺重点2" value="24" pic="" ></posi>
+		<posi name="商铺重点3" value="25" pic="" ></posi>
+		<posi name="商铺普通新闻" value="26" pic="" ></posi>
+		<posi name="商铺焦点图" value="27" pic="" ></posi>
+		<posi name="热门关键词（商铺）" value="28" pic="" ></posi>
+		<posi name="资讯中心商铺排行榜重点" value="76" pic="" ></posi>
+		<posi name="资讯中心商铺排行榜普通" value="77" pic="" ></posi>
+		<posi name="资讯中心商铺热门播报重点" value="78" pic="" ></posi>
+		<posi name="资讯中心商铺热门播报" value="79" pic="" ></posi>
+	</type>
+
+
+	<type name="搜铺访谈" value="217" show="private">
+		<posi name="搜铺访谈" value="23" pic="/images/locationImgs/indexTalk.jpg" ></posi>
+		<posi name="资讯中心访谈" value="68" pic="" ></posi>
+    <posi name="APP访谈" value="83" pic="" ></posi>
+	</type>
+	<type name="行业" value="23" show="private">
+		<posi name="首页行业" value="58" pic="/images/locationImgs/indexIndus.jpg" ></posi>
+		<posi name="资讯中心行业重点1" value="40" pic="/images/locationImgs/centerIndusFlag1.jpg" ></posi>
+		<posi name="资讯中心行业重点2" value="41" pic="/images/locationImgs/centerIndusFlag2.jpg" ></posi>
+	</type>
+	<type name="投资开发" value="202" show="private">
+		<posi name="首页投资开发" value="59" pic="/images/locationImgs/indexKaiFa.jpg" ></posi>
+		<posi name="资讯中心投资开发重点" value="43" pic="/images/locationImgs/centerBaoguangFlag.jpg" ></posi>
+	</type>
+	<type name="招商成果" value="230" show="private">
+		<posi name="资讯中心招商成果重点" value="44" pic="/images/locationImgs/centerBaoguangFlag.jpg" ></posi>
+		<posi name="首页招商成果" value="71" pic="" ></posi>
+	</type>
+	<type name="商铺调整" value="231" show="private">
+		<posi name="资讯中心商铺调整重点" value="45" pic="/images/locationImgs/centerBaoguangFlag.jpg" ></posi>
+	</type>
+	<type name="开业项目" value="207" show="private">
+		<posi name="资讯中心开业项目重点" value="46" pic="/images/locationImgs/centerBaoguangFlag.jpg" ></posi>
+	</type>
+	<type name="商圈观察" value="232" show="private">
+		<posi name="资讯中心商圈观察重点" value="47" pic="/images/locationImgs/centerBaoguangFlag.jpg" ></posi>
+	</type>
+	<type name="名企专区" value="233" show="private">
+		<posi name="资讯中心名企专区重点" value="48" pic="/images/locationImgs/centerBaoguangFlag.jpg" ></posi>
+	</type>
+	<type name="扩展选址" value="204" show="private">
+		<posi name="资讯中心扩展选址重点" value="49" pic="/images/locationImgs/centerBaoguangFlag.jpg" ></posi>
+		<posi name="首页拓展选址普通(20)" value="74" pic="" ></posi>
+		<posi name="首页拓展选址重点(18)" value="75" pic="" ></posi>
+	</type>
+	<type name="品牌星探" value="234" show="private">
+		<posi name="资讯中心品牌星探重点" value="50" pic="/images/locationImgs/centerBaoguangFlag.jpg" ></posi>
+		<posi name="首页品牌星探(16)" value="73" pic="" ></posi>
+    <posi name="星探专题扩展选址" value="80" pic="" ></posi>
+	</type>
+	<type name="热牌新张" value="235" show="private">
+		<posi name="资讯中心热牌新张重点" value="51" pic="/images/locationImgs/centerBaoguangFlag.jpg" ></posi>
+	</type>
+	<type name="观点评论" value="236" show="private">
+		<posi name="资讯中心观点评论重点" value="54" pic="/images/locationImgs/centerBaoguangFlag.jpg" ></posi>
+		<posi name="首页专家视野" value="72" pic="" ></posi>
+	</type>
+	<type name="娱乐地产" value="229" show="private">
+		<posi name="首页娱乐地产" value="29" pic="/images/locationImgs/indexYuLe.jpg" ></posi>
+		<posi name="资讯中心娱乐地产重点" value="55" pic="/images/locationImgs/centerBaoguangFlag.jpg" ></posi>
+	</type>
+	<type name="曝光台" value="237" show="private">
+		<posi name="曝光台" value="6" pic="" ></posi>
+		<posi name="曝光台重点1" value="42" pic="/images/locationImgs/centerBaoguangFlag.jpg" ></posi>
+	</type>
+</position>
